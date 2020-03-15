@@ -6,6 +6,7 @@ Demo : https://alien-star.herokuapp.com/
 # Getting Started
 First install required packages :
 > npm install
+
 Then start server :
 > node server.js
 
