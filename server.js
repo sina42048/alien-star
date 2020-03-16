@@ -1,8 +1,8 @@
-let express = require('express');
-let app = express();
-let server = require('http').Server(app);
-let io = require('socket.io').listen(server);
-let randomString = require('randomstring');
+const express = require('express');
+const app = express();
+const server = require('http').Server(app);
+const io = require('socket.io').listen(server);
+const randomString = require('randomstring');
 
 
 let players = {};
@@ -15,7 +15,7 @@ let star = {
 let scores = {
     blue: 0,
     red: 0
-  };
+};
 
 
 app.use(express.static(__dirname + "/public"));

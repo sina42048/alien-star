@@ -21,7 +21,7 @@ let config = {
     }
 };
 
-let game = new Phaser.Game(config);
+const game = new Phaser.Game(config);
 
 function preload() {
     this.load.image('ship1' , 'assets/playerShip1_blue.png');
@@ -29,7 +29,7 @@ function preload() {
     this.load.image('otherPlayer1' , 'assets/enemyBlue1.png');
     this.load.image('otherPlayer2' , 'assets/enemyRed1.png');
     this.load.image('star' , 'assets/star.png');
-    this.load.audio('collect' , 'assets/collect.mp3' , { instances : 2 })
+    this.load.audio('collect' , 'assets/collect.mp3' , { instances : 1 })
 }
 
 function create() {
